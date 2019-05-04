@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>LEGATO MOSSO</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+
+</style>
+<body >
+<div class="topspace" style="height:50px;"></div>
+<div class="w3-top" style="margin-top:50px;" style="box-shadow:0px 0px 10px 0px black; text-decoration:none; z-index:5; position:fixed;">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s2">
+      <a href="home" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s2">
+      <a href="about" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s2">
+      <a href="payments" class="w3-button w3-block w3-black">PAYMENT</a>
+    </div>
+    <div class="w3-col s2">
+      <a href="comingsoon" class="w3-button w3-block w3-black">NEWS</a>
+    </div>
+    <div class="w3-col s2">
+      <a href="contact" class="w3-button w3-block w3-black">CONTACT</a>
+    </div>
+    <div class="w3-col s2">
+      <a href="developer" class="w3-button w3-block w3-black"><small>DEVELOPER</small></a>
+    </div>
+
+  </div>
+</div>
+
+
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="background-color:gray; ">
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container" style="background-color: white; box-shadow:0px 0px 30px 5px black; font-size:30px;">
+      <h1 style="color:gray"><b>Contact</b></h1>
+      <p><b>If there are any questions, comments, and concerns, please do not hesitate to let us know.  We are here to help you diminish any problem you are currently having with your company that may be causing your business great harm or even stress.  To do this, we put our best efforts into building software (website in this case) that will automatically solve this problem without you lifting a finger!</b></p>
+    </div>
+  </div>
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container" style="background-color: white; box-shadow:0px 0px 30px 5px black; font-size:30px;">
+      <h1 style="color:gray"><b>Payments</b></h1>
+      <p><b>To clear any confusion or worries, we are happy to inform you that your personal information is safe with PayPal.  We do not have access to your card information but instead we use PayPal to take care of that for you.  A quick, easy and safe way to make your payments.</b></p>
+    </div>
+  </div>
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container" style="background-color: white; box-shadow:0px 0px 30px 5px black; font-size:30px;">
+      <h1 style="color:gray"><b>Payment Plans</b></h1>
+      <p><b>If our prices are too much for clients we definetly understand, which is why we allow clients to make monthly payments which makes it easier for them to work within their budget. </b></p>
+    </div>
+  </div>
+
+  <div class="w3-row">
+    <div class="w3-twothird w3-container" style="background-color: white; box-shadow:0px 0px 30px 5px black; font-size:30px;">
+      <h1 style="color:gray"><b>News</b></h1>
+      <p><b>If you would like us to keep you posted on what new offers we will have in the future, visit our "News" page.  The "News" page will notify users on what to expect from us.  If you would like to stay posted on announcements, visit the Legato Mosso socialmedia page (You can find Legato Mosso's social media in the "Home" page).</b></p>
+    </div>
+  </div>
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container" style="background-color: white; box-shadow:0px 0px 30px 5px black; font-size:30px;">
+      <h1 style="color:gray"><b>Evolution</b></h1>
+      <p><b>This is only the beginning! We are very excited to be working on new components of this company that gives clients more options and assistance when making sure that their company is actually sufficient to the point where they are making enough sales. Every week Legato Mosso analyzes what could be improved! Whether it's our abilities in web developement, the clients' expeiriance with working with us, or even the project ideas that we come up with.</b></p>
+    </div>
+  </div>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>
